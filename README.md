@@ -5,10 +5,15 @@
 - 자동화 케이스로 구현하기 전 상호간의 `TC Review` 시간을 가지고, 어떻게 구현할 것인지 논의를 진행한 다음 `Pull Request`를 통해 기여할 수 있도록 합니다.
 
 ## Tools
-- Language : `Python`
+- Language : `Python` 3.12.x
 - A/T Framework : `Selenium`
 - Test Framework : `Pytest`
 - HTML Report : `Allure`
+
+## Pre-Condition
+- 본격적인 자동화 테스트 프로젝트 수행 전, 기본적으로 설치되어 있어야 하는 모듈이 있습니다.
+- Mac의 경우 `homebrew` 를 이용해 `brew install allure` 명령어로 라이브러리 설치가 먼저 필요합니다.
+- Window의 경우 `scoop` 을 이용해 `scoop install allure` 명령어로 라이브러리 설치가 먼저 필요합니다.
 
 ## Structure
 - 논의 중<img width="1121" alt="image" src="https://github.com/user-attachments/assets/c50f406c-0999-4b84-9ef2-ae5f69e46647">
