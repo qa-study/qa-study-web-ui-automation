@@ -1,12 +1,17 @@
-import elements.el_webtoon_main as element
-from pages.base_page import BasePage
-from selenium.webdriver.common.by import By
+from pages.탭_내비게이션 import 탭_내비게이션
 
 
-class 탭_내비게이션(BasePage):
+def test_웹툰_탭_이동_확인(driver):
+    탭_내비게이션(driver).webtoon_page_redirect()
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-    def test_웹툰_탭_이동(self):
-        BasePage.click_element(self, By.XPATH, element.xpath_webtoon_webtoon_tap)
+
+def test_베스트도전_탭_이동_확인(driver):
+    탭_내비게이션(driver).best_page_redirect()
+
+
+def test_도전만화_탭_이동_확인(driver):
+    탭_내비게이션(driver).challenge_page_redirect()
+
+
+def test_마이페이지_탭_이동_확인(driver):
+    탭_내비게이션(driver).mypage_page_redirect()
